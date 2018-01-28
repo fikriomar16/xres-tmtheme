@@ -3,19 +3,20 @@
 # Xresources to Sublime colorscheme (.tmTheme)
 #
 # Created by Yune Haruka
+# Forked by fikriomar16
 #
-# Usage: xres-tmTheme.sh [themeName] > /path/to/color/scheme.tmTheme
-# Example: xres-tmTheme.sh Doge > ~/.config/sublime-text-3/Packages/user/doge.tmTheme
+# Usage: xres-tmTheme.sh [SourceColor] [themeName] > /path/to/color/scheme.tmTheme
+# Example: xres-tmTheme.sh /path/to/color Doge > ~/.config/sublime-text-3/Packages/User/doge.tmTheme
 #
 #
 
-file=$HOME/.Xresources
+file=$1
 get_colors(){
 	grep "*.color$1 *:" $file | awk -F\# '{print $2}'
 }
 get_colors_bg=`grep "*.background *:" $file | awk -F\# '{print $2}'`
 get_colors_fg=`grep "*.foreground *:" $file | awk -F\# '{print $2}'`
-themeName=$1
+themeName=$2
 themeAuthor=$USER
 cat <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
