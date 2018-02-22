@@ -6,7 +6,8 @@
 
 **NOTE:** `xres-tmTheme` is not perfect and won't work perfectly.
 
-![screenshot](https://github.com/fikriomar16/xres-tmtheme/raw/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/fikriomar16/xres-tmtheme/master/screenshot.png)
+![wal-tmTheme](https://raw.githubusercontent.com/fikriomar16/xres-tmtheme/master/wal-tmTheme.png)
 
 
 ## Table of Contents
@@ -35,7 +36,7 @@ place `xres-tmTheme.sh` to your path (/usr/bin/, ~/.local/bin/, etcetera)
 ## Usage
 ```sh
 # Usage: xres-tmTheme.sh /source/color [themeName] > /path/to/color/scheme.tmTheme
-# Example: xres-tmTheme.sh /path/to/source Doge > ~/.config/sublime-text-3/Packages/User/doge.tmTheme
+# Example: xres-tmTheme.sh $HOME/.Xresources Doge > ~/.config/sublime-text-3/Packages/User/doge.tmTheme
 ```
 
 ## Customization
